@@ -3,3 +3,7 @@ iam_user_name = "terraform_user"
 bucket_name = "www.allenguo.link"
 root_domain = "allenguo.link"
 dns_record_ttl = 300
+website_bucket = "allenguo.link"
+force_destroy = false
+index_document = "index.html"
+versioning_enabled = "Enabled"
