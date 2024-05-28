@@ -14,8 +14,9 @@ resource "aws_s3_bucket" "terraform_state_bucket" {
   bucket = var.bucket_name
 
   #prevent accidently delete
+  #In order to destroy, it needs to set as false, otherwise true.
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   tags = {
